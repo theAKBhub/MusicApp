@@ -1,0 +1,70 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionBarStyle">@style/ActionBarTheme</item>
+    </style>
+
+    <style name="ActionBarTheme" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:actionBarItemBackground">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dimen_20dp</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_10dp</item>
+        <item name="android:paddingLeft">@dimen/dimen_20dp</item>
+        <item name="android:paddingRight">@dimen/dimen_20dp</item>
+        <item name="android:background">@color/colorButton</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/font_medium</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextSong">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="TextMedia">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/dimen_10dp</item>
+        <item name="android:paddingBottom">@dimen/dimen_10dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="MediaButtons">
+        <item name="android:layout_width">@dimen/dimen_30dp</item>
+        <item name="android:layout_height">@dimen/dimen_30dp</item>
+        <item name="android:alpha">0.6</item>
+    </style>
+
+
+    <!-- Splash Screen Styles -->
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="LogoSymbolImageView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/music_app_logo_symbol</item>
+        <item name="android:layout_marginTop">@dimen/dimen_30dp</item>
+    </style>
+
+    <style name="LogoImageView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/music_app_logo</item>
+    </style>
+
+</resources>

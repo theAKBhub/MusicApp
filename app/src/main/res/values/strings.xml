@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Simply Music</string>
+
+    <!-- Button Labels -->
+    <string name="splash_button">Enjoy the Music</string>
+
+    <!-- Song Categories -->
+    <string name="category_romantic">romantic</string>
+    <string name="category_cheer">cheer</string>
+    <string name="category_celebration">celebration</string>
+    <string name="category_dance">dance</string>
+    <string name="category_sleep">sleep</string>
+
+    <!-- Playlist Labels -->
+    <string name="label_romantic">Romance is in the air</string>
+    <string name="label_cheer">Cheer me up</string>
+    <string name="label_celebration">Let\'s celebrate</string>
+    <string name="label_dance">Time to exercise</string>
+    <string name="label_sleep">Help me sleep</string>
+</resources>

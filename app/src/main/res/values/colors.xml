@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#673AB7</color>
+    <color name="colorPrimaryDark">#880E4F</color>
+    <color name="colorAccent">#C2185B</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorPinkLight">#A3779F</color>
+    <color name="colorPinkExtraLight">#DBC1D9</color>
+    <color name="colorRed">#F44F4F</color>
+
+    <!-- Specific resource colors -->
+    <color name="colorButton">#33FFFFFF</color>
+    <color name="light_header_color">#33FFFFFF</color>
+</resources>
