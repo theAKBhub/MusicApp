@@ -112,8 +112,6 @@ public class PlaylistActivity extends AppCompatActivity implements ListView.OnIt
         TextView textViewSinger = (TextView) view.findViewById(R.id.text_singer);
         String singer = textViewSinger.getText().toString();
 
-       // Log.i("SONG", "You clicked Item: " + id + " at position:" + position + " /  " + song);
-
         intentExtra = song + "|" + singer + "|" + mSongCategory;
         Intent intent = new Intent(context, MediaActivity.class);
         intent.putExtra("message", intentExtra);
