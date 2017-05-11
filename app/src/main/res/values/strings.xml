@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Simply Music</string>
+    <string name="text_artwork">artwork__instrumental</string>
 
     <!-- Button Labels -->
     <string name="splash_button">Enjoy the Music</string>
@@ -17,4 +18,23 @@
     <string name="label_celebration">Let\'s celebrate</string>
     <string name="label_dance">Time to exercise</string>
     <string name="label_sleep">Help me sleep</string>
+
+    <!-- Activity Information Text -->
+    <string name="text_main_activity">
+        Main Screen - this displays a list of playlists or song
+        categories classified by mood. This uses ListView and ArrayAdapter to display the list.
+        When clicked on any list item, PlaylistActivity (next screen) is launched with songs
+        related to that mood.
+    </string>
+    <string name="text_playlist_activity">
+        Playlist Screen - this displays a list of songs based on the mood chosen in MainActivity
+        screen. This uses ListView and ArrayAdapter to display the list. When clicked on any list
+        item, MediaActivity (next screen) is launched to listen to the song.
+    </string>
+    <string name="text_media_activity">
+        Media Screen - this displays selected song details, media controls to play, pause and stop
+        the song, and a seekbar to show song\'s progress. Play/Pause functionality
+        are handled by a single button. Stop button stops the media and returns to PlaylistActivity.
+        This screen uses Media Player class and Runnable Interface to implement the above functionality.
+    </string>
 </resources>

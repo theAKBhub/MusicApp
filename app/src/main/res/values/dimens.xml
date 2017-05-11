@@ -27,7 +27,7 @@
     <dimen name="font_xlarge">24sp</dimen>
 
     <!-- Media Artwork Size -->
-    <dimen name="artwork_width">250dp</dimen>
-    <dimen name="artwork_height">250dp</dimen>
+    <dimen name="artwork_width">200dp</dimen>
+    <dimen name="artwork_height">200dp</dimen>
 
 </resources>

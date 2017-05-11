@@ -40,6 +40,16 @@
         <item name="android:textColor">@color/colorWhite</item>
     </style>
 
+    <style name="TextInfo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_10dp</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/font_small</item>
+    </style>
+
     <style name="MediaButtons">
         <item name="android:layout_width">@dimen/dimen_30dp</item>
         <item name="android:layout_height">@dimen/dimen_30dp</item>

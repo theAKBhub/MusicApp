@@ -2,9 +2,11 @@ package com.example.android.musicapp;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -33,6 +35,10 @@ public class PlaylistActivity extends AppCompatActivity implements ListView.OnIt
      * Method to create list of songs to be displayed
      */
     public void createSongList() {
+        Typeface customFont;
+
+        // Set custom typeface
+        customFont = Typeface.createFromAsset(PlaylistActivity.this.getAssets(), "fonts/opensans_regular.ttf");
 
         ArrayList<Song> songs = new ArrayList<Song>();
 
@@ -89,9 +95,23 @@ public class PlaylistActivity extends AppCompatActivity implements ListView.OnIt
             songs.add(new Song("Instrumental Track 5", "Unknown"));
         }
 
-        SongAdapter adapter = new SongAdapter(this, songs);
         ListView listView = (ListView) findViewById(R.id.list_songs);
+
+        // Inflate header view
+        ViewGroup headerView = (ViewGroup)getLayoutInflater().inflate(R.layout.list_header, listView, false);
+        TextView textHeader = (TextView) headerView.findViewById(R.id.text_listview_header);
+        textHeader.setTypeface(customFont);
+        textHeader.setText(getString(R.string.text_playlist_activity));
+
+        // Add header view to the ListView
+        listView.addHeaderView(headerView);
+
+        // Create SongAdapter object to display listview
+        SongAdapter adapter = new SongAdapter(this, songs);
         listView.setAdapter(adapter);
+
+        // Set OnClickListener on ListView to identify the item on ListView clicked by user
+        // Text on the ListView item clicked is passed on to MediaActivity
         listView.setOnItemClickListener(this);
     }
 
@@ -117,7 +137,5 @@ public class PlaylistActivity extends AppCompatActivity implements ListView.OnIt
         intent.putExtra("message", intentExtra);
         startActivity(intent);
     }
-
-
 
 }

@@ -8,4 +8,3 @@
     android:background="@drawable/music_app_splash"
     android:id="@+id/list_songs"
     tools:context="com.example.android.musicapp.PlaylistActivity" />
-

@@ -15,9 +15,14 @@
         android:orientation="vertical" >
 
         <TextView
+            android:id="@+id/text_listview_header"
+            style="@style/TextInfo"
+            android:text="@string/text_media_activity"/>
+
+        <TextView
             android:id="@+id/text_song"
             style="@style/TextMedia"
-            android:layout_marginTop="@dimen/dimen_50dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
             android:textSize="@dimen/font_large"/>
 
         <TextView

@@ -94,7 +94,7 @@ public class MediaActivity extends AppCompatActivity implements Runnable,
      */
     public void getArtworkResource() {
         if (mSongCategory.equals(getString(R.string.category_sleep))) {
-            mArtworkResource = "artwork__instrumental";
+            mArtworkResource = getString(R.string.text_artwork);
         } else {
             mArtworkResource = "artwork__";
             mArtworkResource += mSong.replace("'", "").toLowerCase();
